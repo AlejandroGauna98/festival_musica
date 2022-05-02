@@ -1,0 +1,10 @@
+@use 'base/variables' as v;
+
+.header{
+    display: flex;
+    justify-content: space-around; 
+    background-color: v.$verde;
+    h1{
+        color: v.$blanco;
+    }
+}
