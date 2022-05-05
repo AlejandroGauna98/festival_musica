@@ -368,9 +368,26 @@ a {
 
 .header {
   display: flex;
-  justify-content: space-around;
   background-color: green;
+}
+.header .contenedor {
+  display: flex;
+  justify-content: space-between;
 }
 .header h1 {
   color: #ffffff;
+}
+
+.navegacion-principal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.navegacion-principal a {
+  color: #ffffff;
+  padding: 1rem;
+}
+.navegacion-principal a:hover {
+  background-color: #f53756;
 }
