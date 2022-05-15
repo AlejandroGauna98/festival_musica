@@ -12,15 +12,17 @@ html{
 body{
     font-family: v.$fuentePrincipal;
     font-size: 1.6rem;
+    margin: 0;
 }
 
 p{
     font-size: 2rem;
     color: v.$negro;
+    line-height: 2.5rem;
 }
 
 .contenedor{
-    width: 95%;
+    width: 75%;
     max-width: 120rem;
     margin: 0 auto;
 }
@@ -28,3 +30,11 @@ p{
 a{
     text-decoration: none;
 }
+
+img{
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+

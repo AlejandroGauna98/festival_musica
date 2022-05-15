@@ -349,15 +349,17 @@ html {
 body {
   font-family: "Source Sans 3", sans-serif;
   font-size: 1.6rem;
+  margin: 0;
 }
 
 p {
   font-size: 2rem;
   color: #000000;
+  line-height: 2.5rem;
 }
 
 .contenedor {
-  width: 95%;
+  width: 75%;
   max-width: 120rem;
   margin: 0 auto;
 }
@@ -366,28 +368,202 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.bg-verde {
+  background-color: lightgreen;
+}
+
+.bg-azul {
+  background-color: aqua;
+}
+
 .header {
   display: flex;
-  background-color: green;
 }
 .header .contenedor {
-  display: flex;
-  justify-content: space-between;
+  height: 100%;
 }
-.header h1 {
-  color: #ffffff;
+.header .contenedor-header {
+  position: absolute;
+  background: rgb(126, 2, 195);
+  background: linear-gradient(270deg, rgba(126, 2, 195, 0.5) 0%, rgba(255, 0, 110, 0.3) 100%);
+  height: 100%;
+  width: 100%;
 }
 
 .navegacion-principal {
+  margin-top: 2rem;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+}
+@media (min-width: 992px) {
+  .navegacion-principal {
+    justify-content: end;
+    padding-left: 1rem;
+  }
 }
 .navegacion-principal a {
+  text-align: center;
   color: #ffffff;
-  padding: 1rem;
+  padding: 1.1rem;
+  font-size: 2.3rem;
 }
 .navegacion-principal a:hover {
   background-color: #f53756;
+}
+
+.video {
+  position: relative;
+  max-height: 60rem;
+  min-height: 50rem;
+  overflow: hidden;
+}
+.video video {
+  width: auto;
+  display: block;
+  object-fit: cover;
+}
+@media (min-width: 992px) {
+  .video video {
+    width: 100%;
+  }
+}
+.video .contenido-video {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  justify-content: center;
+}
+.video .contenido-video h2 {
+  font-size: 7rem;
+  color: #ffffff;
+  margin: 0;
+}
+.video .contenido-video p {
+  width: fit-content;
+  background-color: #f53756;
+  padding: 1rem 2rem;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+.sobre-festival {
+  padding: 5rem 0;
+  display: block;
+}
+@media (min-width: 768px) {
+  .sobre-festival {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.contenido-festival {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contenido-festival h2 {
+  margin-bottom: 2rem;
+}
+.contenido-festival .fecha {
+  color: #f53756;
+  font-weight: 700;
+}
+
+.lineup {
+  width: 100%;
+  height: auto;
+  background: rgb(255, 0, 110);
+  background: linear-gradient(90deg, rgba(255, 0, 110, 0.3) 19%, rgba(3, 135, 255, 0.5) 100%);
+}
+.lineup h3 {
+  padding-top: 4rem;
+  text-align: center;
+  font-size: 4rem;
+  color: #ffffff;
+}
+.lineup .dia {
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 5rem 0;
+}
+
+.escenarios-contenedor {
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .escenarios-contenedor {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+.escenarios-contenedor .escenario {
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.75);
+  margin-top: 2rem;
+}
+.escenarios-contenedor .escenario p:after {
+  content: "";
+  display: block;
+  width: 20rem;
+  height: 10rem;
+  background-size: 15rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 2rem auto 0 auto;
+}
+
+.edm .nombre-escenario:after {
+  background-image: url("../img/icono_edm.png");
+}
+
+.rock .nombre-escenario:after {
+  background-image: url("../img/icono_rock.png");
+}
+
+.nombre-escenario {
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.calendario {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.calendario li {
+  padding: 2.5rem;
+  font-weight: 700;
+}
+.calendario li span {
+  font-weight: 400;
+}
+
+.bg-verde {
+  background-color: lightgreen;
+}
+.bg-verde li:nth-child(2n+1) {
+  background-color: #45e245;
+}
+
+.bg-azul {
+  background-color: aqua;
+}
+.bg-azul li:nth-child(2n+1) {
+  background-color: #00adad;
 }
