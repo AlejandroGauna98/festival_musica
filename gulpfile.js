@@ -67,7 +67,7 @@ function dev(done){
 }
 
 exports.css = css;
-exports.js = javascript;
+exports.javascript = javascript;
 exports.imagenes = imagenes;
 exports.versionWebp = versionWebp;
 exports.versionAvif = versionAvif;
