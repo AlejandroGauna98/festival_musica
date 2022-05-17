@@ -2,9 +2,12 @@
 @use 'base/mixins' as m;
 
 .galeria{
-    padding: 5rem 0;
+    padding: 5rem;
+    margin-bottom: 3rem;
     h3{
         text-align: center;
+        font-size: 4rem;
+        font-weight: 700;
     }
 }
 
